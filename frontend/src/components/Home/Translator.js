@@ -543,11 +543,11 @@ const Translator = () => {
             Translate
         </button>
 
-
+<br /><br />
         {fromLanguage === 'si' && Object.keys(translationOptions).length > 0 ? (
           <ul>
             {Object.entries(translationOptions).map(([word, options], index) => (
-              <li key={index}>
+              <li key={index} style={{color:'white'}}>
                 <strong>{word}:</strong> {options.join(', ')}
               </li>
             ))}
@@ -556,8 +556,9 @@ const Translator = () => {
           <p></p>
         )}
 
+        <div>
         {fromLanguage === 'en' && grammarErrors.length > 0 && (
-          <div>
+          <div style={{backgroundColor:'white', padding:'20px', borderRadius:'15px'}}>
             {/* Display grammar errors in list view without any extra HTML rendering */}
             <div>
               <p>Grammar issues found:</p>
@@ -571,6 +572,7 @@ const Translator = () => {
             </div>
           </div>
         )}
+        </div>
       </div>
     </div>
   );

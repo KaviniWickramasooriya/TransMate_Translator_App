@@ -193,9 +193,10 @@ const SinhalaDictionary = () => {
       {/* Search bar */}
       <Form.Control
           type="text"
-          placeholder="Search by Sinhala word, English word, or status..."
+          placeholder="Search by Sinhala word, English word, Status"
           value={searchQuery}
           onChange={handleSearch}
+          style={{marginTop:'-100px'}}
         />
       </div>
       <br />
@@ -203,17 +204,17 @@ const SinhalaDictionary = () => {
       <Table bordered hover className="table-bordered" style={{ backgroundColor: "#f9f9f9", borderRadius: "10px", overflow: "hidden", border: "2px solid black", width: "100%", tableLayout: "fixed" }}>
         <thead>
           <tr align="center" style={{ backgroundColor: "#007bff", color: "white", fontSize: "13px", backgroundColor:'darkcyan' }}>
-            <th style={{ padding: "5px", width: "15%" }}>Sinhala Word</th>
-            <th style={{ padding: "10px", width: "10%" }}>Edit/Delete</th>
-            <th style={{ padding: "5px", width: "15%" }}>English Word 1</th>
-            <th style={{ padding: "6px", width: "10%" }}>Status</th>
-            <th style={{ padding: "1px", width: "10%" }}>Action</th>
-            <th style={{ padding: "5px", width: "15%" }}>English Word 2</th>
-            <th style={{ padding: "6px", width: "10%" }}>Status</th>
-            <th style={{ padding: "1px", width: "10%" }}>Action</th>
-            <th style={{ padding: "5px", width: "15.5%" }}>English Word 3</th>
-            <th style={{ padding: "6px", width: "10%" }}>Status</th>
-            <th style={{ padding: "1px", width: "10%" }}>Action</th>
+            <th style={{ padding: "5px", width: "15%", color: "white", fontSize: "13px", backgroundColor:'darkcyan' }}>Sinhala Word</th>
+            <th style={{ padding: "10px", width: "10%", color: "white", fontSize: "13px", backgroundColor:'darkcyan' }}>Edit/Delete</th>
+            <th style={{ padding: "5px", width: "15%", color: "white", fontSize: "13px", backgroundColor:'darkcyan' }}>English Word 1</th>
+            <th style={{ padding: "6px", width: "10%", color: "white", fontSize: "13px", backgroundColor:'darkcyan' }}>Status</th>
+            <th style={{ padding: "1px", width: "10%", color: "white", fontSize: "13px", backgroundColor:'darkcyan' }}>Action</th>
+            <th style={{ padding: "5px", width: "15%" , color: "white", fontSize: "13px", backgroundColor:'darkcyan'}}>English Word 2</th>
+            <th style={{ padding: "6px", width: "10%" , color: "white", fontSize: "13px", backgroundColor:'darkcyan'}}>Status</th>
+            <th style={{ padding: "1px", width: "10%" , color: "white", fontSize: "13px", backgroundColor:'darkcyan'}}>Action</th>
+            <th style={{ padding: "5px", width: "15.5%", color: "white", fontSize: "13px", backgroundColor:'darkcyan' }}>English Word 3</th>
+            <th style={{ padding: "6px", width: "10%", color: "white", fontSize: "13px", backgroundColor:'darkcyan' }}>Status</th>
+            <th style={{ padding: "1px", width: "10%", color: "white", fontSize: "13px", backgroundColor:'darkcyan' }}>Action</th>
           </tr>
         </thead>
         <tbody align="center" style={{ backgroundColor: "#e9ecef", fontSize: "12px" }}>

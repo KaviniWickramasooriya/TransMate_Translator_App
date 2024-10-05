@@ -439,10 +439,10 @@ export default function ShortFormWord() {
       <Table bordered hover className="table-bordered" style={{ backgroundColor: "#f9f9f9", borderRadius: "10px", overflow: "hidden", border: "2px solid black", width: "100%", tableLayout: "fixed" }}>
         <thead>
           <tr align="center" style={{ backgroundColor: "darkcyan", color: "white", fontSize: "13px" }}>
-            <th style={{ padding: "5px", width: "5%" }}>Short Form Word</th>
-            <th style={{ padding: "10px", width: "10%" }}>Full Form</th>
-            <th style={{ padding: "6px", width: "5%" }}>Status</th>
-            <th style={{ padding: "0px", width: "5%" }}>Action</th>
+            <th style={{ padding: "5px", width: "5%", color: "white", fontSize: "13px", backgroundColor:'darkcyan' }}>Short Form Word</th>
+            <th style={{ padding: "10px", width: "10%", color: "white", fontSize: "13px", backgroundColor:'darkcyan' }}>Full Form</th>
+            <th style={{ padding: "6px", width: "5%", color: "white", fontSize: "13px", backgroundColor:'darkcyan' }}>Status</th>
+            <th style={{ padding: "0px", width: "5%", color: "white", fontSize: "13px", backgroundColor:'darkcyan' }}>Action</th>
           </tr>
         </thead>
         <tbody align="center" style={{ backgroundColor: "#e9ecef", fontSize: "12px" }}>

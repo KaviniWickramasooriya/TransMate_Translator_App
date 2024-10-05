@@ -38,8 +38,10 @@ function Dictionary() {
           <Link to="/login" className="login-btn">Login</Link>
         </div>*/}
       </nav>
+      <br />
+      <br />
       <h1>English Dictionary</h1>
-      
+      <br />
       <div className="search-box">
         <input
           type="text"
@@ -47,6 +49,7 @@ function Dictionary() {
           onChange={(e) => {
             setSearchWord(e.target.value);
           }}
+          style={{width:'400px'}}
         />
         <button onClick={getMeaning}>
           <FaSearch size="20px" />
@@ -55,14 +58,14 @@ function Dictionary() {
       
       {data && (
         <div className="result-box">
-          <h2>
+          {/* <h2>
             {data.word}
             {data.phonetics[0] && (
               <button onClick={playAudio} style={{width:'50px'}}>
                 <FcSpeaker size="26px" />
               </button>
             )}
-          </h2>
+          </h2> */}
           
           <div className="word-details">
             <h4>Part of Speech:</h4>

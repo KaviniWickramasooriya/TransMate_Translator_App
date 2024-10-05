@@ -1,4 +1,4 @@
-.container {
+/* .container {
     max-width: 1000px;
     margin: 0 auto;
   }
@@ -18,8 +18,8 @@
   
   h2 {
     color: #333;
-    text-align: center; /* Center the header text */
-    margin-bottom: 20px; /* Add margin for spacing */
+    text-align: center; 
+    margin-bottom: 20px; 
   }
   
   .form-group {
@@ -28,13 +28,13 @@
   
   .submit-button-container {
     display: flex;
-    justify-content: center; /* Center the button */
+    justify-content: center;
   }
   
   button {
     padding: 10px;
     border-radius: 5px;
-    width: 100%; /* Full width of its container */
+    width: 100%;
   }
   
   button:disabled {
@@ -47,4 +47,77 @@
   
   button:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-  }  
+  }   */
+
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .table-bordered {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .table-bordered th {
+    background-color: darkcyan;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .table-bordered td {
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 13px;
+  }
+  
+  /* Alternating row colors */
+  .table-bordered tbody tr:nth-child(odd) {
+    background-color: #e9ecef;
+  }
+  
+  .table-bordered tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .table-bordered th, .table-bordered td {
+    border: 1px solid black;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  button:disabled {
+    opacity: 0.7;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  }
+  
+  .table-action-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .table-action-buttons button {
+    margin: 0 2px;
+  }
+  
